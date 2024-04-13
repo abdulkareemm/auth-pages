@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+  /* background: linear-gradient(rgba(0, 168, 255, 0.5) , rgba(185, 0, 255, 0.5)), url("https://colorlib.com/etc/lf/Login_v9/images/bg-01.jpg"); */
+}
+
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/* input animations */
+.inputANM input:valid ~ span,
+.inputANM input:focus ~ span {
+  color: black;
+  font-size: 0.75em;
+  transform: translateY(-34px);
+}
+.inputANM input:valid ~ i,
+.inputANM input:focus ~ i {
+  height: 43px;
+}
+.borderLine {
+  position: absolute;
+  inset: 0;
+  top: 0;
+}
+.borderLine::before {
+  content: "";
+  border-radius: 8px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #720e9e 0%,
+    #FBCEB1 12%,
+    transparent 10%,
+    transparent 50%
+  );
+  animation: animate 6s linear infinite;
+  animation-delay: 0s;
+}
+.borderLine::after {
+  content: "";
+  border-radius: 8px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #FF3800 0%,
+    #FBCEB1 10%,
+    transparent 10%,
+    transparent 50%
+  );
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+@keyframes animate {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+}
