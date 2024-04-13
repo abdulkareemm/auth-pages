@@ -1,4 +1,4 @@
-import { Route, Routes as Router,Navigate } from "react-router-dom";
+import { Route, BrowserRouter as Router,Navigate } from "react-router-dom";
 import {LoginPage,RegisterPage,ForgetPasswordPage} from "./pages/auth"
 
 function App() {
