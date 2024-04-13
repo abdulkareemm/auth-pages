@@ -1,6 +1,6 @@
 {
   "name": "authentication-pages-react",
-  "homepage": "http://abdulkareemm.github.io/auth-pages/auth/login",
+  "homepage": "http://abdulkareemm.github.io/auth-pages/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
