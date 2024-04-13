@@ -1,7 +1,6 @@
 {
   "name": "authentication-pages-react",
   "version": "0.1.0",
-  "homepage": "http://abdulkareemm.github.io/auth-pages",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.1.1",
