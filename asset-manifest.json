@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/auth-pages/auth/login/static/css/main.0be2776d.css",
+    "main.js": "/auth-pages/auth/login/static/js/main.fda0c422.js",
+    "index.html": "/auth-pages/auth/login/index.html",
+    "main.0be2776d.css.map": "/auth-pages/auth/login/static/css/main.0be2776d.css.map",
+    "main.fda0c422.js.map": "/auth-pages/auth/login/static/js/main.fda0c422.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0be2776d.css",
+    "static/js/main.fda0c422.js"
+  ]
+}
